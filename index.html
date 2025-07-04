@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datepicker UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="datepicker">
+      <div class="datepicker-input">
+        <input type="text" placeholder="dd / mm / yyyy" readonly />
+        <button class="datepicker-icon">
+          <img src="calendar.svg" alt="Calendar Icon" />
+        </button>
+      </div>
+
+      <div class="calendar">
+        <div class="calendar-header">
+          <button class="prev">
+            <img src="chevron-left.svg" alt="Previous Month" />
+          </button>
+          <span class="month-year">June 2025</span>
+          <button class="next">
+            <img src="chevron-right.svg" alt="Next Month" />
+          </button>
+        </div>
+        <div class="calendar-body">
+          <div class="day-names">
+            <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+          </div>
+          <div class="days"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
